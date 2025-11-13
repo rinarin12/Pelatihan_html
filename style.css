@@ -1,27 +1,25 @@
 body {
   background-color: #8B008B;
   font-family: Arial, Sans-serif;
-  /* Perbaikan typo: ';' menjadi ':' */
-  color: #191970; 
+  color: #191970; /* Ini juga sudah diperbaiki dari (color;) */
 }
 
-/* Perbaikan selector: 
- .kartu-foto profil (salah) 
- .kartu-foto.profil (benar, tanpa spasi)
+/* Perbaikan utama: 
+  '.kartu-foto.profil' (salah) diubah menjadi '.kart-foto.profil' 
+  agar SAMA PERSIS dengan class="kart-foto profil" di HTML Anda.
 */
-.kartu-foto.profil { 
+.kart-foto.profil { 
   width: 300px;
   margin: 50px auto;
   padding: 20px;
   background-color: cyan;
   border-radius: 15px;
-  /* Perbaikan typo: 'rgbs' menjadi 'rgba' */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 'rgbs' jadi 'rgba' */
   text-align: center;
 }
 
-/* Perbaikan selector di sini juga */
-.kartu-foto.profil img { 
+/* Ini juga diperbaiki dari '.kartu-foto.profil img' */
+.kart-foto.profil img { 
   width: 150px;
   height: 150px;
   border-radius: 50%;
